@@ -192,7 +192,9 @@ console.log(cirujano.showInfo());
 console.log(cirujano.totalPatients());
 console.log(cirujano.totalSurgeries());
 
-
+class Pediatra extends Doctor {
+  
+}
 
 // Programación Funcional en JavaScript
 
