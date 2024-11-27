@@ -3,6 +3,9 @@
 ## Descripción
 Este proyecto para una página web para una clínica ficticia.
 
+## Integrantes
+
+
 ## Características
 - Vista Principal (Incluye sección de bienvenida, servicios, testimonios, pie de página)
 - Presentación de Equipo Médico , listado.
