@@ -10,7 +10,7 @@ Este proyecto para una página web para una clínica ficticia.
 - Página de Administración
 
 ## Requisitos
-- Navegador Web.
+- Navegador Web.  (TEST)
 
 ## Ejecución
 1. Clona el repositorio:
