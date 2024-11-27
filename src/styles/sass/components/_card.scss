@@ -1,0 +1,45 @@
+.service__card, .team__card {
+  @include roundedCard();
+  background-color: #fff;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.service__card:hover, .team__card:hover {
+  border: 5px solid $tertiary-color;
+  transform: scale(1.05);
+}
+.service__card:active, .team__card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.card__title {
+  color: $secondary-color;
+  font-weight: 700;
+}
+.card__icon {
+  font-size: 50px;
+  color: $tertiary-color;
+}
+.service__card {
+  min-height: 430px;
+  @media (max-width: 1024px) {
+    margin-bottom: 20px !important;
+    min-height: 350px;
+  }
+  @media (max-width: 768px) {
+    min-height: 375px;
+  }
+}
+.team__card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  min-height: 600px;
+  margin-bottom: 30px;
+  @media (max-width: 768px) {
+    min-height: 550px;
+    width: 350px !important;
+  }
+}

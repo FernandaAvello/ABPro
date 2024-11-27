@@ -1,0 +1,41 @@
+.carousel__card {
+  background-image: url('./../../images/quotes.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border-style: none;
+  padding: 30px;
+  margin: 20px;
+  width: 100%;
+  @media (max-width: 1024px) {
+    padding: 20px 10px;
+    background-image: none;
+  }
+  @media (max-width: 768px) {
+    border: 1px solid $secondary-color;
+    padding: 10px 10px;
+    background-image: none;
+    width: 95%;
+  }
+  @media (max-width: 426px) {
+    width: 85%;
+  }
+}
+.carousel__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.carousel__p {
+  font-size: large;
+  font-weight: 400;
+  margin: 30px 100px;
+  text-align: justify;
+  @media (max-width: 768px) {
+    margin: 30px 0;
+  }
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: lightgray;
+}

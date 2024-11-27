@@ -1,0 +1,113 @@
+#section__frontpage {
+  background-image: url('./../../images/family.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  @media (max-width: 768px) {
+    background-image: none;
+    height: 100px;
+  }
+}
+
+.frontpage__message {
+  color: #fff;
+  padding-top: 300px;
+}
+
+// SECCION SALUDO BIENVENIDA
+.section__welcome {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  padding: 100px 80px;
+  width: 100%;
+  margin-bottom: 40px;
+  @media (max-width: 768px) {
+    display: flex;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 50px;
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+    text-align: center;
+    padding: 50px 50px;
+  }
+}
+
+.welcome__image {
+  width: 550px;
+  height: 300px;
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 450px;
+    height: 250px;
+  }
+  @media (max-width: 426px) {
+    width: 330px;
+    height: 200px;
+  }
+}
+.welcome__p {
+  margin-top: 30px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* SECCION DE SERVICIOS */
+.section__services {
+  background-color: #4759E1;
+  border-radius: 10px;
+  height: 100%;
+  padding: 100px 100px;
+  width: 100%;
+  @media (max-width: 768px) {
+    padding: 50px 10px;
+  }
+  @media (max-width: 1024px) {
+    padding: 50px 50px;
+  }
+}
+.services__container {
+  margin-top: 50px;
+}
+.services__row {
+  padding-bottom: 40px;
+  @media (max-width: 1024px) {
+    padding-bottom: 0;
+  }
+}
+
+/* SECCION PATROCINADORES */
+.sponsor__row {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.sponsor__image {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  @media (max-width: 1024px) {
+    width: 120px;
+    min-height: 100px;
+  }
+}
+/* CAROUSEL TESTIMONIALS */
+.section__testimonials {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  padding: 100px 200px;
+  @media (max-width: 768px) {
+    padding: 30px 0px;
+  }
+  @media (max-width: 1024px) {
+    padding: 50px 50px;
+  }
+}

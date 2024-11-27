@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP 5 -->
+<link rel="stylesheet" href="./src/styles/bootstrap/css/bootstrap.min.css">
+  <!-- CDN MATERIAL DESING ICONS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css"
+    integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- PÁGINA DE ESTILOS -->
+  <link rel="stylesheet" href="./src/styles/sass/main.css">
+  <title>Healthcare</title>
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid ps-0">
+      <a href="index.html">
+        <img src="./src/images/logo.jpg" alt="Logo" height="90">
+      </a>
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">Equipo Médico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/notFound.html">Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/notFound.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a href="agenda.html" class="reserve__btn btn" id="promptInfo">
+              <i class="mdi mdi-phone"> 600 600 7000 </i> ó Agenda tu Cita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="admin.html">
+              <i class="mdi mdi-cog"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- SECCION PORTADA -->
+  <section id="section__frontpage">
+    <div class="frontpage__message d-flex flex-column align-items-center">
+      <h1>Transformamos la Experiencia del Cuidado</h1>
+      <h5>Con tecnología avanzada y un equipo experto, te brindamos una atención médica integral para ti y toda tu
+        familia.</h5>
+      <button class="reserve__btn btn mt-5 btn-lg">¡Llámanos! al 600 600 7000 ó Agenda tu Cita</button>
+    </div>
+  </section>
+  <section class="main__container">
+    <!-- SECCION BIENVENIDA -->
+    <section class="section__welcome d-flex flex-column align-items-center">
+      <h1 class="section__title--dark">En Healthcare Medical Clinic estamos contigo</h1>
+      <div class="row mt-4">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+          <img class="welcome__image" src="./src/images/team.webp" alt="team">
+        </div>
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+          <p class="welcome__p"> ¡Bienvenido a Healthcare Medical Clinic! Nos enorgullece ofrecer atención médica
+            integral y de calidad, centrada en el bienestar físico, emocional y mental de nuestros pacientes, con un
+            enfoque personalizado y apoyados por profesionales capacitados y tecnología avanzada.<br> Nuestra <b>misión</b>
+            es proporcionar un servicio accesible y humano, mientras que nuestra <b>visión</b> es ser líderes en el
+            cuidado de la salud, promoviendo la prevención y creando una comunidad más saludable y consciente de su
+            bienestar.<br> Gracias por confiar en nosotros; estamos aquí para acompañarte en cada etapa de tu proceso de
+            salud con empatía, compromiso y profesionalismo.</p>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION NUESTROS SERVICIOS -->
+    <section class="section__services d-flex flex-column align-items-center">
+      <h1 class="section__title--light"> Nuestros Servicios </h1>
+      <div class="services__container">
+        <div class="row services__row">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-needle"></i>
+              <h4 class="card__title">Laboratorio</h4>
+              <p class="mt-2">Ofrecemos un amplio rango de análisis clínicos y pruebas diagnósticas para evaluar la
+                salud y detectar enfermedades, garantizando resultados precisos y rápidos.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-radiology-box"></i>
+              <h4 class="card__title">Imagenología</h4>
+              <p class="mt-2">Contamos con tecnología avanzada para realizar estudios de imagen, como radiografías,
+                ultrasonidos y resonancias magnéticas, facilitando diagnósticos efectivos y oportunos.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-ambulance"></i>
+              <h4 class="card__title">Ambulancia</h4>
+              <p class="mt-2">Nuestro servicio de ambulancia está disponible las 24 horas, equipado con personal médico
+                capacitado y tecnología de vanguardia para el transporte seguro y eficiente de pacientes.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-heart-pulse"></i>
+              <h4 class="card__title">Cardiología</h4>
+              <p class="mt-2">Brindamos atención especializada en el diagnóstico y tratamiento de enfermedades del
+                corazón, con un enfoque integral para cuidar la salud cardiovascular de nuestros pacientes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row services__row">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-teddy-bear"></i>
+              <h4 class="card__title">Pediatría</h4>
+              <p class="mt-2">Nuestro equipo de pediatras ofrece atención integral para niños, asegurando su desarrollo
+                saludable y el manejo de enfermedades infantiles en un entorno amigable y seguro.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-stomach"></i>
+              <h4 class="card__title">Gastroenterología</h4>
+              <p class="mt-2">Entregamos evaluación y tratamiento de trastornos digestivos, utilizando técnicas
+                avanzadas para el diagnóstico y manejo de condiciones gastrointestinales, garantizando el bienestar del
+                paciente.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-brain"></i>
+              <h4 class="card__title">Neurología</h4>
+              <p class="mt-2">Ofrecemos diagnóstico y tratamiento para enfermedades del sistema nervioso, como migrañas, epilepsia y
+                trastornos del sueño, con tecnología avanzada y un enfoque personalizado.</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="service__card card d-flex flex-column align-items-center m-0">
+              <i class="card__icon mdi mdi-scale-bathroom"></i>
+              <h4 class="card__title">Nutrición y Dietética</h4>
+              <p class="mt-2"> Brindamos planes alimenticios adaptados para manejar obesidad, diabetes y otros desórdenes,
+                promoviendo una alimentación saludable y mejorando el bienestar general.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION PATROCINADORES -->
+    <div id="section__sponsor d-flex flex-column align-items-center">
+      <div class="row sponsor__row">
+        <h1 class="section__title--dark text-center mb-5">Nuestros patrocinadores</h2>
+        <div class="col-xl-2 col-lg-2 col-md-6">
+          <img src="./src/images/patrocinador1.svg" alt="patrocinador" class="sponsor__image">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6">
+          <img src="./src/images/patrocinador2.svg" alt="patrocinador" class="sponsor__image">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6">
+          <img src="./src/images/patrocinador3.svg" alt="patrocinador" class="sponsor__image">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6">
+          <img src="./src/images/patrocinador4.svg" alt="patrocinador" class="sponsor__image">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6">
+          <img src="./src/images/patrocinador5.svg" alt="patrocinador" class="sponsor__image">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-6">
+          <img src="./src/images/patrocinador6.svg" alt="patrocinador" class="sponsor__image">
+        </div>
+      </div>
+    </div>
+    <!-- SECCION TESTIMONIOS -->
+    <section class="section__testimonials d-flex flex-column align-items-center">
+      <h1 class="section__title--dark"> Nuestros Testimonios </h1>
+      <div id="carouselTestimonial" class="carousel slide" data-bs-slide="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card carousel__card d-flex flex-column align-items-center">
+              <img src="./src/images/testimonial1.jpg" alt="Testimonial" class="carousel__img">
+              <p class="carousel__p">"Llevaba meses con problemas digestivos y decidí acudir a la clínica. Desde el
+                primer momento, la atención fue excelente. El gastroenterólogo no solo me explicó el diagnóstico, sino
+                que me dio consejos para cambiar mi dieta. Los exámenes se realizaron rápido y pude tener los resultados
+                en un día. Me siento muchísimo mejor gracias al tratamiento que sigo. Realmente agradezco la empatía del
+                equipo."
+              <div class="d-flex justify-end">
+                <b> Camila González - 34 años</b>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel__card card d-flex flex-column align-items-center">
+              <img src="./src/images/testimonial2.webp" alt="Testimonial" class="carousel__img">
+              <p class="carousel__p">"Mi hijo Joaquín tuvo fiebre alta y lo trajimos a la clínica. La pediatra que lo
+                atendió fue muy amable y logró tranquilizarlo rápidamente. Nos hicieron varios exámenes de laboratorio
+                sin demora, y en menos de una hora ya sabíamos qué tenía. Además, nos ofrecieron seguimiento por
+                teléfono para ver cómo evolucionaba. Nos sentimos muy seguros con el cuidado recibido."
+              <div class="d-flex justify-end">
+                <b> Víctor Páez - 38 años</b>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel__card card d-flex flex-column align-items-center">
+              <img src="./src/images/testimonial3.webp" alt="Testimonial" class="carousel__img">
+              <p class="carousel__p">"Empecé a tener dolores en el pecho y mi médico de cabecera me recomendó esta
+                clínica. No solo fui atendido de inmediato, sino que el cardiólogo me realizó un electrocardiograma y un
+                ecocardiograma el mismo día. La profesionalidad y rapidez del equipo me dejaron muy tranquilo. Hoy sigo
+                un plan de salud que me permite controlar mi presión arterial gracias a la clínica."
+              <div class="d-flex justify-end">
+                <b> Felipe Grewman - 58 años</b>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel__card card d-flex flex-column align-items-center">
+              <img src="./src/images/testimonial4.jpg" alt="Testimonial" class="carousel__img">
+              <p class="carousel__p">"Tuve una caída en mi casa y mi familia llamó a la ambulancia de la clínica. Los
+                paramédicos llegaron rápido y fueron muy cuidadosos conmigo. Me trasladaron a urgencias donde me
+                hicieron radiografías y exámenes para descartar fracturas graves. Gracias a la atención recibida, ya
+                estoy recuperándome en casa. La clínica se encargó de todo, con mucha calidez y profesionalismo."
+              <div class="d-flex justify-end">
+                <b> María Paulina Castiglione - 77 años</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="row footer__container">
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__info">
+        <h4>Nuestro Sitio</h4>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">Equipo Médico</a>
+        <a href="/notFound.html">Comunidad</a>
+        <a href="notFound.html">Blog</a>
+        <a href="/contact.html">Contáctanos</a>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__schedule">
+        <h4>Horario de Atención</h4>
+        <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+        <p>Sábados: 8:00 am - 12:00 pm</p>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__contact">
+        <h4>Contáctanos</h4>
+        <p>600 600 7000</p>
+      </div>
+      <hr>
+      <div class="row justify-content-around">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="mdi mdi-facebook footer__social--icon"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="mdi mdi-twitter footer__social--icon"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="mdi mdi-instagram footer__social--icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <img src="./src/images/logo.jpg" alt="Logo" height="60" class="footer__logo">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center">
+          <p>Términos y Condiciones</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./src/js/boostrap/bootstrap.bundle.min.js"></script>
+  <script src="./src/js/app.js"></script>
+</body>
+</html>

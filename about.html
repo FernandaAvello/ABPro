@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP 5 -->
+  <link rel="stylesheet" href="./src/styles/bootstrap/css/bootstrap.min.css">
+  <!-- CDN MATERIAL DESING ICONS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css"
+    integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- PÁGINA DE ESTILOS -->
+  <link rel="stylesheet" href="./src/styles/sass/main.css">
+  <title>Healthcare</title>
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid ps-0">
+      <a href="index.html">
+        <img src="./src/images/logo.jpg" alt="Logo" height="90">
+      </a>
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">Equipo Médico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/notFound.html">Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/notFound.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a href="agenda.html" class="reserve__btn btn" id="promptInfo">
+              <i class="mdi mdi-phone"> 600 600 7000 </i> ó Agenda tu Cita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="admin.html">
+              <i class="mdi mdi-cog"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- SECCION NUESTRO EQUIPO MÉDICO -->
+  <section id="section__ourTeam">
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="outTeam__description">
+          <h1 class="section__title--dark text-center mb-5">Tenemos los mejores especialistas</h1>
+          <p>Bienvenidos a nuestra clínica, donde la <b>excelencia médica</b> es nuestra prioridad. Creemos firmemente
+            que cada miembro de tu familia merece recibir la mejor atención posible, y por ello, nos comprometemos a
+            ofrecer un cuidado que supere tus expectativas. Nuestro equipo de profesionales altamente capacitados
+            trabaja con dedicación para proporcionar una <b>atención humana y personalizada</b>, asegurando que cada
+            consulta sea una experiencia cálida y significativa.
+            Adoptamos un enfoque integral de salud, combinando las tecnologías más avanzadas con un trato cercano y
+            compasivo, porque entendemos que el bienestar va más allá del tratamiento. Nos mueve el propósito de
+            ofrecerte confianza y tranquilidad en cada etapa de la vida, acompañándote con rigor médico y empatía en
+            cada momento del camino. Te invitamos a descubrir cómo nuestro compromiso con la excelencia puede marcar la
+            diferencia en tu salud y la de tu familia.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <!-- <div class="col-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Busca tu médico por nombre" aria-label="Buscar médico" aria-describedby="button-addon2">
+          <button class="btn btn-success" type="button" id="button-addon2">Buscar</button>
+        </div>
+      </div> -->
+      <div class="col-6 d-flex justify-content-end">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="filteredDoctors" id="checkYearsOfExperience" >
+          <label class="form-check-label" for="flexCheckDefault">Mostrar sólo médicos con igual o más de 5 años de experiencia.</label>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="doctores"></div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="row footer__container">
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__info">
+        <h4>Nuestro Sitio</h4>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">Equipo Médico</a>
+        <a href="/notFound.html">Comunidad</a>
+        <a href="notFound.html">Blog</a>
+        <a href="/contact.html">Contáctanos</a>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__schedule">
+        <h4>Horario de Atención</h4>
+        <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+        <p>Sábados: 8:00 am - 12:00 pm</p>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__contact">
+        <h4>Contáctanos</h4>
+        <p>600 600 7000</p>
+      </div>
+      <hr>
+      <div class="row justify-content-around">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="mdi mdi-facebook footer__social--icon"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="mdi mdi-twitter footer__social--icon"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="mdi mdi-instagram footer__social--icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <img src="./src/images/logo.jpg" alt="Logo" height="60" class="footer__logo">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center">
+          <p>Términos y Condiciones</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./src/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./src/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP 5 -->
+  <link rel="stylesheet" href="./src/styles/bootstrap/css/bootstrap.min.css">
+  <!-- CDN MATERIAL DESING ICONS -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css"
+  integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- PÁGINA DE ESTILOS -->
+  <link rel="stylesheet" href="./src/styles/sass/main.css">
+  <title>Healthcare</title>
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid ps-0">
+      <a href="index.html">
+        <img src="./src/images/logo.jpg" alt="Logo" height="90">
+      </a>
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">Equipo Médico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/notFound.html">Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/notFound.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a href="agenda.html" class="reserve__btn btn" id="promptInfo">
+              <i class="mdi mdi-phone"> 600 600 7000 </i> ó Agenda tu Cita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="admin.html">
+              <i class="mdi mdi-cog"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Seccion Agendamiento -->
+  <section id="section__appointment">
+    <h1 class="section__title--dark text-center my-5"> Agendamiento de Horas</h1>
+    <div class="container">
+      <form id="appointmentForm" class="row g-3">
+        <div class="col-md-4">
+          <label for="patientName" class="form-label">Nombre del Paciente</label>
+          <input type="text" class="form-control" id="patientName" required>
+        </div>
+        <div class="col-md-4">
+          <label for="patientName" class="form-label">Teléfono del Paciente</label>
+          <input type="text" class="form-control" id="patientName" required>
+        </div>
+        <div class="col-md-4">
+          <label for="patientEmail" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="patientEmail" required>
+        </div>
+        <div class="col-md-4">
+          <label for="doctorSelect" class="form-label">Selecciona un Doctor</label>
+          <select id="doctorSelect" class="form-select" required>
+            <option selected disabled value="">Elige...</option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="daySelect" class="form-label">Días disponibles</label>
+          <select id="daySelect" class="form-select" required>
+            <option selected disabled value="">Elige...</option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="hourSelect" class="form-label">Horas disponibles</label>
+          <select id="hourSelect" class="form-select" required>
+            <option selected disabled value="">Elige...</option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="col-12 text-center mt-5">
+          <button type="submit" class="btn btn-primary">Agendar Cita</button>
+        </div>
+      </form>
+    </div>
+    <h1 class="section__title--dark text-center my-5">Listado de Citas Agendadas</h1>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="row footer__container">
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__info">
+        <h4>Nuestro Sitio</h4>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">Equipo Médico</a>
+        <a href="/notFound.html">Comunidad</a>
+        <a href="notFound.html">Blog</a>
+        <a href="/contact.html">Contáctanos</a>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__schedule">
+        <h4>Horario de Atención</h4>
+        <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+        <p>Sábados: 8:00 am - 12:00 pm</p>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column footer__contact">
+        <h4>Contáctanos</h4>
+        <p>600 600 7000</p>
+      </div>
+      <hr>
+      <div class="row justify-content-around">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="mdi mdi-facebook footer__social--icon"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="mdi mdi-twitter footer__social--icon"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="mdi mdi-instagram footer__social--icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <img src="./src/images/logo.jpg" alt="Logo" height="60" class="footer__logo">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center">
+          <p>Términos y Condiciones</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./src/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./src/js/appointment.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+:root {
+  --ph-color-cyan: #00bcd4; /* Cyan */
+  --ph-color-cyan-rgb: rgb(0, 188, 212); /* Cyan */
+  --ph-color-cyan-dark: #0097a7; /* Darker Cyan */
+  --ph-color-cyan-darker: #00838f; /* Even Darker Cyan */
+  --ph-color-cyan-darkest: #006064; /* Darkest Cyan */
+}
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--ph-color-cyan);
+  --bs-btn-border-color: var(--ph-color-cyan);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--ph-color-cyan-dark);
+  --bs-btn-hover-border-color: var(--ph-color-cyan-dark);
+  --bs-btn-focus-shadow-rgb: var(--ph-color-cyan-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--ph-color-cyan-dark);
+  --bs-btn-active-border-color: var(--ph-color-cyan-dark);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--ph-color-cyan);
+  --bs-btn-disabled-border-color: var(--ph-color-cyan);
+}

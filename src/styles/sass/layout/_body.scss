@@ -1,0 +1,7 @@
+.main__container {
+  padding: 4%;
+  background-color: #E7EAFF;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}

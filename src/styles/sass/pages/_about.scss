@@ -1,0 +1,21 @@
+.outTeam__description {
+  font-size: 18px;
+  padding: 3% 10%;
+  text-align: justify;
+  @media (max-width: 768px) {
+    padding: 1% 0;
+  }
+}
+.team__image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+.card__chip {
+  border: 1px solid $tertiary-color;
+  border-radius: 10px;
+  color: $tertiary-color;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}

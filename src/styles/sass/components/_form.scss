@@ -1,0 +1,27 @@
+#section__contact, #section__ourTeam {
+  padding: 100px;
+  @media (max-width: 768px) {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact__form {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #292C89;
+  height: 100%;
+  padding: 100px 400px;
+  width: 100%;
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+  @media (max-width: 1024px) {
+    padding: 30px 50px;
+  }
+}
+
+.form__btn {
+  background-color: #292C89;
+  color: #fff;
+}

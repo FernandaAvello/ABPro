@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.w-100 {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.section__title--dark {
+  color: #292C89;
+  font-weight: 700;
+}
+
+.section__title--light {
+  color: #fff;
+  font-weight: 700;
+}
+
+.reserve__btn {
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.section__notFound--btn {
+  background-color: #292C89;
+  color: #fff;
+  border: 2px solid #fff !important;
+}
+
+.admin__btn {
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.service__card, .team__card {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.service__card:hover, .team__card:hover {
+  border: 5px solid #4CC9FE;
+  transform: scale(1.05);
+}
+
+.service__card:active, .team__card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card__title {
+  color: #292C89;
+  font-weight: 700;
+}
+
+.card__icon {
+  font-size: 50px;
+  color: #4CC9FE;
+}
+
+.service__card {
+  min-height: 430px;
+}
+@media (max-width: 1024px) {
+  .service__card {
+    margin-bottom: 20px !important;
+    min-height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .service__card {
+    min-height: 375px;
+  }
+}
+
+.team__card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  min-height: 600px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .team__card {
+    min-height: 550px;
+    width: 350px !important;
+  }
+}
+
+.carousel__card {
+  background-image: url("./../../images/quotes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border-style: none;
+  padding: 30px;
+  margin: 20px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .carousel__card {
+    padding: 20px 10px;
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  .carousel__card {
+    border: 1px solid #292C89;
+    padding: 10px 10px;
+    background-image: none;
+    width: 95%;
+  }
+}
+@media (max-width: 426px) {
+  .carousel__card {
+    width: 85%;
+  }
+}
+
+.carousel__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel__p {
+  font-size: large;
+  font-weight: 400;
+  margin: 30px 100px;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .carousel__p {
+    margin: 30px 0;
+  }
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: lightgray;
+}
+
+#section__contact, #section__ourTeam {
+  padding: 100px;
+}
+@media (max-width: 768px) {
+  #section__contact, #section__ourTeam {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact__form {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #292C89;
+  height: 100%;
+  padding: 100px 400px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .contact__form {
+    padding: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact__form {
+    padding: 30px 50px;
+  }
+}
+
+.form__btn {
+  background-color: #292C89;
+  color: #fff;
+}
+
+.main__container {
+  padding: 4%;
+  background-color: #E7EAFF;
+}
+@media (max-width: 768px) {
+  .main__container {
+    padding: 0;
+  }
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: #4759E1;
+}
+
+.navbar-collapse {
+  background-color: #4759E1;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  background-color: #4759E1;
+}
+
+.footer__container {
+  padding: 60px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .footer__container {
+    padding: 60px 0 60px 50px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+@media (max-width: 426px) {
+  .footer__logo {
+    margin: 20px 0;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.footer__social i {
+  color: #fff;
+  font-size: 30px;
+}
+
+a {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 426px) {
+  .footer__schedule, .footer__contact {
+    margin-top: 20px;
+  }
+}
+
+.outTeam__description {
+  font-size: 18px;
+  padding: 3% 10%;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .outTeam__description {
+    padding: 1% 0;
+  }
+}
+
+.team__image {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__chip {
+  border: 1px solid #4CC9FE;
+  border-radius: 10px;
+  color: #4CC9FE;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#section__admin, #section__appointment {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#map {
+  background-image: url("./../../images/map.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#section__frontpage {
+  background-image: url("./../../images/family.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #section__frontpage {
+    background-image: none;
+    height: 100px;
+  }
+}
+
+.frontpage__message {
+  color: #fff;
+  padding-top: 300px;
+}
+
+.section__welcome {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  padding: 100px 80px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .section__welcome {
+    display: flex;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .section__welcome {
+    display: flex;
+    text-align: center;
+    padding: 50px 50px;
+  }
+}
+
+.welcome__image {
+  width: 550px;
+  height: 300px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .welcome__image {
+    width: 450px;
+    height: 250px;
+  }
+}
+@media (max-width: 426px) {
+  .welcome__image {
+    width: 330px;
+    height: 200px;
+  }
+}
+
+.welcome__p {
+  margin-top: 30px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* SECCION DE SERVICIOS */
+.section__services {
+  background-color: #4759E1;
+  border-radius: 10px;
+  height: 100%;
+  padding: 100px 100px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .section__services {
+    padding: 50px 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .section__services {
+    padding: 50px 50px;
+  }
+}
+
+.services__container {
+  margin-top: 50px;
+}
+
+.services__row {
+  padding-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .services__row {
+    padding-bottom: 0;
+  }
+}
+
+/* SECCION PATROCINADORES */
+.sponsor__row {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+@media (max-width: 768px) {
+  .sponsor__row {
+    display: none;
+  }
+}
+
+.sponsor__image {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+@media (max-width: 1024px) {
+  .sponsor__image {
+    width: 120px;
+    min-height: 100px;
+  }
+}
+
+/* CAROUSEL TESTIMONIALS */
+.section__testimonials {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  padding: 100px 200px;
+}
+@media (max-width: 768px) {
+  .section__testimonials {
+    padding: 30px 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .section__testimonials {
+    padding: 50px 50px;
+  }
+}
+
+:root {
+  --ph-color-cyan: #00bcd4; /* Cyan */
+  --ph-color-cyan-rgb: rgb(0, 188, 212); /* Cyan */
+  --ph-color-cyan-dark: #0097a7; /* Darker Cyan */
+  --ph-color-cyan-darker: #00838f; /* Even Darker Cyan */
+  --ph-color-cyan-darkest: #006064; /* Darkest Cyan */
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--ph-color-cyan);
+  --bs-btn-border-color: var(--ph-color-cyan);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--ph-color-cyan-dark);
+  --bs-btn-hover-border-color: var(--ph-color-cyan-dark);
+  --bs-btn-focus-shadow-rgb: var(--ph-color-cyan-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--ph-color-cyan-dark);
+  --bs-btn-active-border-color: var(--ph-color-cyan-dark);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--ph-color-cyan);
+  --bs-btn-disabled-border-color: var(--ph-color-cyan);
+}/*# sourceMappingURL=main.css.map */
