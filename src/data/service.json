@@ -1,0 +1,42 @@
+[
+  {
+    "service": "Laboratorio",
+    "details": "Ofrecemos un amplio rango de análisis clínicos y pruebas diagnósticas para evaluar la salud y detectar enfermedades, garantizando resultados precisos y rápidos.",
+    "icon": "mdi-needle"
+  },
+  {
+    "service": "Imagenología",
+    "details": "Contamos con tecnología avanzada para realizar estudios de imagen, como radiografías, ultrasonidos y resonancias magnéticas, facilitando diagnósticos efectivos y oportunos.",
+    "icon": "mdi-radiology-box"
+  },
+  {
+    "service": "Ambulancia",
+    "details": "Nuestro servicio de ambulancia está disponible las 24 horas, equipado con personal médico capacitado y tecnología de vanguardia para el transporte seguro y eficiente de pacientes.",
+    "icon": "mdi-ambulance"
+  },
+  {
+    "service": "Cardiología",
+    "details": "Brindamos atención especializada en el diagnóstico y tratamiento de enfermedades del corazón, con un enfoque integral para cuidar la salud cardiovascular de nuestros pacientes.",
+    "icon": "mdi-heart-pulse"
+  },
+  {
+    "service": "Pediatría",
+    "details": "Nuestro equipo de pediatras ofrece atención integral para niños, asegurando su desarrollo saludable y el manejo de enfermedades infantiles en un entorno amigable y seguro.",
+    "icon": "mdi-teddy-bear"
+  },
+  {
+    "service": "Gastroenterología",
+    "details": "Entregamos evaluación y tratamiento de trastornos digestivos, utilizando técnicas avanzadas para el diagnóstico y manejo de condiciones gastrointestinales, garantizando el bienestar del paciente.",
+    "icon": "mdi-stomach"
+  },
+  {
+    "service": "Neurología",
+    "details": "Ofrecemos diagnóstico y tratamiento para enfermedades del sistema nervioso, como migrañas, epilepsia y trastornos del sueño, con tecnología avanzada y un enfoque personalizado.",
+    "icon": "mdi-brain"
+  },
+  {
+    "service": "Nutrición y Dietética",
+    "details": "Brindamos planes alimenticios adaptados para manejar obesidad, diabetes y otros desórdenes, promoviendo una alimentación saludable y mejorando el bienestar general.",
+    "icon": "mdi-scale-bathroom"
+  }
+]
