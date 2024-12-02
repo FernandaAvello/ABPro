@@ -160,11 +160,15 @@ class Doctor {
   totalPatients() {
     return `El total de pacientes atendidos por el Doctor ${this.fullName}, fueron ${this.patients_attended}.`;
   }
+
+  showNumberOfpatients(){
+    return this.patients_attended;
+  }
+
 }
 // Ejemplo de uso de la clase Doctor y de cómo acceder a una variable encapsulada a través de un método.
 const doctor = new Doctor('María','Gómez', 'Pediatría', 5, 200);
 console.log(doctor.getYearsOfExperience());
-
 
 class Cirujano extends Doctor { // Subclase Cirujano que hereda de la clase Doctor
   constructor(name, lastName, specialty, years_of_experience, patients_attended, surgeries_performed) { // Añadimos el atributo surgeries_performed
@@ -192,7 +196,33 @@ console.log(cirujano.showInfo());
 console.log(cirujano.totalPatients());
 console.log(cirujano.totalSurgeries());
 
+class Pediatra extends Doctor { //Pediatra hereda de Doctor. Al ser pediatra la especialidad debe ser una de las inidciadas en JSON de especialidades espeçificas de pediatra
+  constructor(name, lastName, specialty, years_of_experience, patients_attended, ages_range) { // Añadimos el atributo ages_range 
+    super(name, lastName, specialty, years_of_experience, patients_attended); // Llamamos al constructor de la clase padre
+    this.ages_range = ages_range; // Atributo propio de la subclase 
+  }
 
+  totalPatients() {
+    return `El total de pacientes atendidos por el Pediatra ${this.fullName}, fueron ${this.patients_attended}.`;
+  }
+
+  getSpecialtyCode(){
+    return this.specialty;
+  }
+
+  async getSpecialtyNAme(specialty){
+    const url = "./src/data/specialty.json"
+    fetch(url)
+    .then(res => res.json())
+    .then(data => data[specialty]['display'])
+    .then(data => console.log("El código de especialidad "+ specialty + " es " + data));
+  }
+}
+
+const pediatra = new Pediatra('Pedi','Atra', 46, 10, 33, "12-15"); //Se utiliza el code del JSON de especialidades de pediatría
+console.log(pediatra.totalPatients());
+console.log(pediatra.getSpecialtyNAme(pediatra.getSpecialtyCode()));
+console.log(pediatra);
 
 // Programación Funcional en JavaScript
 

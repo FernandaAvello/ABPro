@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createNewDoctor() {
     // recuperar los valores de los inputs
     const name = document.getElementById("name").value;
-    const specialty = document.getElementById("specialty").value;
+    const specialty = document.getElementById("specialty-options").value;
     const description = document.getElementById("description").value;
     const image = document.getElementById("image").value;
     const years_of_experience = document.getElementById("years_of_experience").value;
@@ -95,9 +95,33 @@ document.addEventListener("DOMContentLoaded", () => {
     saveDoctorButton.addEventListener('click', () => {
       createNewDoctor();
       // Cerrar el modal después de guardar el nuevo doctor
+      const name = document.getElementById("name").value = '';
+      const specialty = document.getElementById("specialty-options").value = '';
+      const description = document.getElementById("description").value = '';
+      const image = document.getElementById("image").value = '';
+      const years_of_experience = document.getElementById("years_of_experience").value = '';
+      const days = document.getElementById("days").value = '';
+      const hours = document.getElementById("hours").value = '';
       const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
       modal.hide();
     });
   }
 
 });
+
+async function getSpecialtysInSelect(){
+  const url = "./src/data/specialty.json"
+  fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    const especialidades = document.getElementById('specialty-options');
+    let select = '<select name="select" class="form-select" required><option selected>Seleccione una especialidad...</option>';
+    data.forEach((especialidad) => {
+      select += "<option value='"+especialidad.display+"'>"+especialidad.display+"</option>";
+    });
+    select+= "</select>";
+    especialidades.innerHTML = select;
+  })
+}
+
+getSpecialtysInSelect();
