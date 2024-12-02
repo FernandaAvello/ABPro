@@ -27,7 +27,7 @@ Karina Hidalgo
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/FernandaAvello/Laboratorio 2.git
+git clone https://github.com/FernandaAvello/ABPro
 ```
 
 2. Navega al directorio del proyecto:
