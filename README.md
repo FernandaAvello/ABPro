@@ -4,7 +4,10 @@
 Este proyecto para una página web para una clínica ficticia.
 
 ## Integrantes
-
+Felipe Pineda
+Marcelo Espinoza
+María Avello
+Karina Hidalgo
 
 ## Características
 - Vista Principal (Incluye sección de bienvenida, servicios, testimonios, pie de página)
@@ -13,7 +16,7 @@ Este proyecto para una página web para una clínica ficticia.
 - Página de Administración
 
 ## Requisitos
-- Navegador Web.  (TEST)
+- Navegador Web.
 
 ## Ejecución
 1. Clona el repositorio:
