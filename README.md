@@ -33,6 +33,16 @@ git clone https://github.com/FernandaAvello/ABPro
 2. Navega al directorio del proyecto:
 3. Doble click en archivo `index.html`
 
+## Fuente de datos
+
+en el directorio `data` se encuentran los arhivos [doctos.json](/src/data/doctors.json), [doctorsNew.json](/src/data/doctorsNew.json) y [service.json](/src/data/service.json) los cuales contienen la información de los doctores y servicios para simular un despliegue dinámico en la página.
+
+La información de los doctores está dividida en el equipo médico más antiguo y doctores que se están integrando. Cada ves que se requiere la lista de doctores, primero se junta la información de ambos archivos (merge) y luego se utiliza como cualquier arreglo.
+
+Esta información es usada funcion [listarDoctoresAdmin( )](https://github.com/FernandaAvello/ABPro/blob/b5d79f7ff2c9ea3ca0dfb3a0a3ab20fda868d3eb/src/js/admin.js#L31), del script [admin.js](/src/js/admin.js) para mostrar los datos de los doctores en la tabla. Tambien se usa en el script [app.js](/src/js/app.js) ([línea 109](https://github.com/FernandaAvello/ABPro/blob/b5d79f7ff2c9ea3ca0dfb3a0a3ab20fda868d3eb/src/js/app.js#L109)) para crear las tarjetas del equipo médico del Hospital.
+
+Por otra parte, la información de los servicios se utiliza únicamente en el script [showServices.js](/src/js/showServices.js) en la funcion [loadServices( )](https://github.com/FernandaAvello/ABPro/blob/b5d79f7ff2c9ea3ca0dfb3a0a3ab20fda868d3eb/src/js/showServices.js#L4), para cargar y mostrar en la página de inicio los servicios ofrecidos por el hospital.
+
 ## Programación Funcional Aplicada
 
 En el archivo app.js se pueden visualizar las funciones y sus correspondientes ejemplos.
