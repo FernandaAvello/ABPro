@@ -2,25 +2,24 @@
 
 ## Descripción
 
-Este proyecto para una página web para una clínica ficticia.
+Este proyecto consiste en una página web para una clínica ficticia que gestiona la información de médicos, pacientes y citas. El objetivo es integrar conceptos avanzados de JavaScript como la manipulación de datos JSON, la programación funcional, orientada a objetos y asincrónica, en un entorno práctico.
 
 ## Integrantes
-
-Felipe Pineda
-Marcelo Espinoza
-María Avello
-Karina Hidalgo
+- Felipe Pineda
+- Marcelo Espinoza
+- María Fernanda Avello
+- Karina Hidalgo
 
 ## Características
-
-- Vista Principal (Incluye sección de bienvenida, servicios, testimonios, pie de página)
-- Presentación de Equipo Médico , listado.
-- Página de Contacto (incluye formulario de contacto, mapa de la clínica)
-- Página de Administración
+- **Vista Principal:** Incluye sección de bienvenida, servicios, testimonios y pie de página.
+- **Presentación del Equipo Médico:** Listado con información de los doctores.
+- **Página de Contacto:** Formulario de contacto y mapa de la clínica.
+- **Página de Administración:** Administración de citas, disponibilidad de médicos, etc.
 
 ## Requisitos
+- Navegador web moderno (Google Chrome, Firefox, etc.).
+- Acceso a Internet.
 
-- Navegador Web.
 
 ## Ejecución
 
@@ -49,19 +48,30 @@ En el archivo app.js se pueden visualizar las funciones y sus correspondientes e
 
 ## Currying
 
-La función calculateTotalCost usa currying para descomponer una función que toma dos argumentos (numberOfConsultations y pricePerConsultation) en una serie de funciones que toman un solo argumento. Primero toma numberOfConsultations y devuelve una función que toma pricePerConsultation. Luego, multiplica ambos valores para calcular el costo total.
+La función calculateTotalCost usa currying para descomponer una función que toma dos argumentos (numberOfConsultations y pricePerConsultation) en una serie de funciones que toman un solo argumento. Primero toma numberOfConsultations y devuelve una función que toma pricePerConsultation, luego multiplica ambos valores para calcular el costo total.
+```js
+const calculateTotalCost = (numberOfConsultations) => (pricePerConsultation) => numberOfConsultations * pricePerConsultation;
+```
+
 
 ## Funciones de flecha
 
 La función calculateAverageWaitingTime que es una función de flecha, simplifica la sintaxis para calcular el tiempo promedio de espera de los pacientes. Toma totalWaitingTime y numberOfPatients como argumentos y devuelve el resultado de dividir el tiempo total de espera entre el número de pacientes.
+const calculateAverageWaitingTime = (totalWaitingTime, numberOfPatients) => totalWaitingTime / numberOfPatients;
+
 
 ## Funciones recursivas
 
-La función calculateTotalConsultationHours calcula recursivamente el total de horas de consulta en una semana. Toma hoursPerDay y days como argumentos. Si days es 0, devuelve 0. De lo contrario, suma hoursPerDay al resultado de una llamada recursiva a sí misma con days - 1.
+ La función calculateTotalConsultationHours calcula recursivamente el total de horas de consulta en una semana. Toma hoursPerDay y days como argumentos. Si days es 0, devuelve 0. De lo contrario, suma hoursPerDay al resultado de una llamada recursiva a sí misma con days - 1.
+ const calculateTotalConsultationHours = (hoursPerDay, days) => (days === 0 ? 0 : hoursPerDay + calculateTotalConsultationHours(hoursPerDay, days - 1));
 
 ## Composición de funciones
 
 La función applyDiscount es una función de orden superior que toma un discount y devuelve una función que toma cost y aplica el descuento. Por otro lado, la función, calculateDiscountedCost usa calculateTotalCost y applyDiscount para calcular el costo total con descuento. Primero calcula el costo total usando calculateTotalCost, luego aplica el descuento usando applyDiscount.
+```js
+const applyDiscount = (discount) => (cost) => cost - (cost * discount);
+const calculateDiscountedCost = (numberOfConsultations, pricePerConsultation, discount) => applyDiscount(discount)(calculateTotalCost(numberOfConsultations)(pricePerConsultation));
+```
 
 En resumen, se demuestra cómo se pueden aplicar los conceptos de programación funcional para crear funciones más modulares, reutilizables y fáciles de mantener. La programación funcional se centra en el uso de funciones puras, la evitación de efectos secundarios y la composición de funciones para construir programas complejos a partir de funciones simples.
 
