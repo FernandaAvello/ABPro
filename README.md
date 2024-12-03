@@ -34,7 +34,7 @@ git clone https://github.com/FernandaAvello/ABPro
 
 ## Fuente de datos
 
-en el directorio `data` se encuentran los arhivos [doctos.json](/src/data/doctors.json), [doctorsNew.json](/src/data/doctorsNew.json) y [service.json](/src/data/service.json) los cuales contienen la información de los doctores y servicios para simular un despliegue dinámico en la página.
+En el directorio `data` se encuentran los arhivos [doctos.json](/src/data/doctors.json), [doctorsNew.json](/src/data/doctorsNew.json) y [service.json](/src/data/service.json) los cuales contienen la información de los doctores y servicios para simular un despliegue dinámico en la página.
 
 La información de los doctores está dividida en el equipo médico más antiguo y doctores que se están integrando. Cada ves que se requiere la lista de doctores, primero se junta la información de ambos archivos (merge) y luego se utiliza como cualquier arreglo.
 
