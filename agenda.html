@@ -63,8 +63,8 @@
           <input type="text" class="form-control" id="patientName" required>
         </div>
         <div class="col-md-4">
-          <label for="patientName" class="form-label">Teléfono del Paciente</label>
-          <input type="text" class="form-control" id="patientName" required>
+          <label for="patientPhone" class="form-label">Teléfono del Paciente</label>
+          <input type="text" class="form-control" id="patientPhone" required>
         </div>
         <div class="col-md-4">
           <label for="patientEmail" class="form-label">Correo Electrónico</label>
@@ -73,22 +73,19 @@
         <div class="col-md-4">
           <label for="doctorSelect" class="form-label">Selecciona un Doctor</label>
           <select id="doctorSelect" class="form-select" required>
-            <option selected disabled value="">Elige...</option>
-            <option value=""></option>
+            <option value="">Selecciona un Doctor</option>
           </select>
         </div>
         <div class="col-md-4">
           <label for="daySelect" class="form-label">Días disponibles</label>
           <select id="daySelect" class="form-select" required>
-            <option selected disabled value="">Elige...</option>
-            <option value=""></option>
+            <option value="">Selecciona un Día</option>
           </select>
         </div>
         <div class="col-md-4">
           <label for="hourSelect" class="form-label">Horas disponibles</label>
           <select id="hourSelect" class="form-select" required>
-            <option selected disabled value="">Elige...</option>
-            <option value=""></option>
+            <option value="">Selecciona una Hora</option>
           </select>
         </div>
         <div class="col-12 text-center mt-5">
@@ -97,6 +94,25 @@
       </form>
     </div>
     <h1 class="section__title--dark text-center my-5">Listado de Citas Agendadas</h1>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID de la Cita</th>
+            <th scope="col">Nombre del Paciente</th>
+            <th scope="col">Correo Electrónico</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Doctor</th>
+            <th scope="col">Día</th>
+            <th scope="col">Hora</th>
+            <th scope="col" id="actionColumn">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="appointmentTable">
+          <!-- Aquí se insertarán las filas de citas -->
+        </tbody>
+      </table>
+    </div>
   </section>
   <!-- FOOTER -->
   <footer>
